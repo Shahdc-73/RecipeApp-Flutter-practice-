@@ -22,15 +22,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Transition(),
+      home:  SignupApp(),
       routes: {
-        SignIn.routeName:(context) => SignIn(),
-        SignUp.routeName:(context) => SignUp(),
-        Transition.routeName:(context) => Transition(),
-        FavoritePage.routeName:(context) =>  FavoritePage(),
-        ProfilePage.routeName:(context)=> ProfilePage(),
-        HomePage.routeName:(context)=> HomePage(),
-        SettingsPage.routeName:(context)=> SettingsPage(),
+        SignIn.routeName:(context) =>   SignIn(),
+        SignupApp.routeName:(context) =>   SignupApp(),
+        Transition.routeName:(context) => const Transition(),
+        FavoritePage.routeName:(context) =>  const FavoritePage(),
+        ProfilePage.routeName:(context)=> const ProfilePage(),
+      HomePage.routeName:(context)=> const HomePage(),
+        SettingsPage.routeName:(context)=> const SettingsPage(),
       },
       theme: Theming.lightTheme,
       // darkTheme: Theming.DarkTheme,
